@@ -1,9 +1,9 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -240 -360 -240 -120 {
 lab=#net1}
@@ -124,11 +124,11 @@ device="ceramic capacitor"}
 C {vsource.sym} -60 -640 1 0 {name=V1 value=1.8 savecurrent=false}
 C {gnd.sym} 0 360 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} 0 -620 0 1 {name=p7 sig_type=std_logic lab=vdd}
-C {code_shown.sym} -1110 -640 0 0 {name=s1 only_toplevel=false value=".lib /usr/local/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+C {code_shown.sym} -1110 -640 0 0 {name=s1 only_toplevel=false value=".lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-.op
-.tran 0.1n 100n
-*.ac dec 100 1 100meg
+*.op
+*.tran 0.1n 100n
+.ac dec 100 1 200meg
 
 * ----- Save all nets -----
 .save all"}
