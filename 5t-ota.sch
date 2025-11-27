@@ -1,9 +1,9 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -40 -180 -40 -110 {
 lab=#net1}
@@ -157,11 +157,9 @@ C {gnd.sym} -40 380 0 0 {name=l4 lab=GND}
 C {gnd.sym} 20 110 3 0 {name=l5 lab=GND}
 C {gnd.sym} 250 110 1 1 {name=l6 lab=GND}
 C {gnd.sym} 210 330 0 0 {name=l8 lab=GND}
-C {code_shown.sym} -620 -170 0 0 {name=s1 only_toplevel=false value=".lib /usr/local/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+C {code_shown.sym} -620 -170 0 0 {name=s1 only_toplevel=false value=".lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-.op
-.tran 0.1n 100n
-*.ac dec 100 1 100meg
+.ac dec 100 1 200meg
 
 * ----- Save all nets -----
 .save all
